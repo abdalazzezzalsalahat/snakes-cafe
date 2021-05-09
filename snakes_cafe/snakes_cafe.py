@@ -43,6 +43,7 @@ def order():
     ** What would you like to order? **
     *********************************** 
     """
+    print(order_messsage)
     Snake_cafe = {
       'Wings' : 0,
       'Cookies' : 0,
@@ -59,7 +60,7 @@ def order():
       'Unicorn Tears' : 0
     }
     while True:
-        user_order = input(dedent(order_messsage))
+        user_order = input('> ')
         if user_order == 'quit':
             break
         if user_order.capitalize() in Snake_cafe:
